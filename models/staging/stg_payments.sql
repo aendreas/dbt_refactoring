@@ -3,6 +3,6 @@ SELECT
     "ORDERID" AS order_id,
     "PAYMENTMETHOD" AS payment_method,
     "STATUS" AS payment_status,
-    "AMOUNT" AS amount,
+    "AMOUNT"/100.0 AS amount,
     "CREATED" AS created_at
 FROM {{ source('shop', 'payments')}}
