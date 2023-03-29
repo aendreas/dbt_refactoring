@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: shop
+    database: refactoring
+    schema: refactored-schema
+    tables:
+      - name: payments
+      - name: customers
+      - name: orders
